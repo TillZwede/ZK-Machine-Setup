@@ -6,3 +6,5 @@ Setup for ZK-Machines
 3. (Useful for VMs: Install some sort of guest additions)
 4. Look into the setup.sh script and see which parts you need/want (use comments on the parts you do not need)
 5. run the setup.sh script
+6. Install an IDE, VS-Code or a jetbrains IDE(webstorm/intellij) work well
+7. Start working
