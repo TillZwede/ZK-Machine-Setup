@@ -14,11 +14,25 @@ gcc --version
 
 sudo apt install cmake g++ make					#installs cmake (asks for confirmation)
 
-# installation of circom2.0 & snarkjs
+# installation of circom2.0 & snarkjs (ZKP-Stuff)
 sudo apt  install cargo 					#installs cargo
+sudo apt-get install -y nlohmann-json-dev			#prerequisite for c++ compiler
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh 	#installs rust
 git clone https://github.com/iden3/circom.git			#donwloads the circom2 installer
 cd circom/
 cargo install --path circom					#installs it				
 export PATH="$HOME/.cargo/bin:$PATH"				#makes it visible to the system by adding it to $PATH
 npm install -g snarkjs						#installs snarkjs
+
+# installation of docker-tools (InDEED-Dev-Tool)
+sudo apt-get install docker.io					#installs docker
+
+sudo apt install python3-pip					#prerequisites for docker-compose
+python3 -m pip install python-dev-tools --user --upgrade
+sudo apt-get install -y libffi-dev
+
+sudo pip install docker-compose					#installs docker-compose
+
+sudo groupadd docker						#prevents permission issues
+sudo usermod -aG docker $USER
+# logout and back in again
