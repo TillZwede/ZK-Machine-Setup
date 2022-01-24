@@ -21,6 +21,8 @@ sudo apt  install cargo 					#installs cargo
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/till/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+export PATH=/home/pathto/bin:$PATH  # add the path to Homebrew binary to your $PATH
+
 brew install nlohmann-json					#prerequisite for c++ compiler
 
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh 	#installs rust
